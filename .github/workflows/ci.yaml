@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 16.16
       - run: npm i 
+      - name: Run unit tests
       - run: npm run test 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
